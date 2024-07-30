@@ -933,9 +933,18 @@ button {
     width: 264px;
   }
 
-.footer-social-text, .footer-logo {
-  text-align: left;
-}
+  .footer-social-text,
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-social {
+    margin: 0;
+  }
+
+  .footer-social-text {
+    margin-top: 0;
+  }
 
   .footer-subcribe-form {
     display: flex;
@@ -944,10 +953,20 @@ button {
 
   .footer-subscribe-button {
     margin-left: 24px;
+    margin-top: 0;
   }
 
+  .footer-wrapper {
+    max-width: 528px;
+    gap: 72px 24px;
+    margin: 0 auto;
+  }
 
-  
+  .footer-email-input {
+    width: 264px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .page-footer {
     padding-top: 100px;
@@ -961,6 +980,26 @@ button {
 
   .footer-social-text {
     margin-bottom: 16px;
+  }
+
+  .footer-wrapper {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .footer-text {
+    margin-top: 0;
+  }
+
+  .logo-footer-descr {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
   }
 }
 
